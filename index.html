@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Profile Card</title>
+</head>
+<body>
+    <div data-testid="currentTimeUTC" id="current-time"></div>
+    <div class="profile-card">
+        <!-- Profile Image -->
+        <div class="banner-image">
+            <img data-testid="profilePicture" src="images/dada.jpg" alt="my profile picture">
+        </div>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <!-- Profile Details -->
+            <div class="profile-details">
+                <h1 data-testid="fullName" class="heading">Tumininu Fadeyi</h1>
+                <h2 data-testid="jobTitle" class="heading">Frontend Developer</h2>
+                <hr>
+                <p data-testid="shortBio">I am a tech enthusiast who is passionate about coding and innovation. I constantly seek new ways to push the boundaries of what's possible with code. Beyond tech, I enjoy sports, psychology, photography, travel, and food. With a curious mind and a love for learning, I'm always exploring new interests and hobbies.</p>
+            </div>
+            <hr class="hr">
+            <!-- Location & Email -->
+            <div class="location-email">
+                <div class="location le">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p data-testid="currentLocation">Lagos, Nigeria</p>
+                </div>
+                
+                <div class="email le">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p data-testid="emailAddress">tumininufadeyi@gmail.com</p>
+                </div>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div data-testid="socialLinks" class="social-links">
+                <a href="instagram.com/da_dahr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="linkedin.com/tumininufadeyi" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="x.com/fadeyi_remy" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="github.com/foluremy" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

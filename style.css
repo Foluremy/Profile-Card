@@ -1,0 +1,147 @@
+body {
+    background-color: wheat;
+}
+
+/* Current Time */
+#current-time {
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #fff;
+    width: 40%;
+    height: fit-content;
+    margin: 30px auto;
+    border-radius: 20px;
+  }
+  
+/* Profile images */
+.profile-card .banner-image {
+    background-image: url('images/bridge.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    height: 80%; 
+    width: 100%;
+}
+
+.profile-card .banner-image img{
+    border-radius: 50%;
+    width: 120px; 
+    height: 160px; 
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 5px solid #fff; 
+  } 
+
+/* Profile content details */
+.profile-card .profile-content .hr {
+    margin: 0;
+}
+.profile-card .profile-content .profile-details {
+    text-align: center;
+    margin: 80px 10px 30px;
+    word-wrap: normal;
+}
+
+.profile-card .profile-content .profile-details .heading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: slide-left 2s ease;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.profile-card .profile-content .profile-details h1 {
+    margin-bottom: 0;
+}
+
+.profile-card .profile-content .profile-details h2 {
+    margin: 6px 0;
+}
+
+.profile-card .profile-content .profile-details p {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.8);
+    animation: slide-right 2s ease;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.profile-card .profile-content .profile-details hr {
+    width: 50%;
+    margin-top: 0;
+}
+
+/* Location & Email */
+.profile-card .profile-content .location-email {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    padding-top: 5px;
+}
+
+.profile-card .profile-content .location-email .location {
+    border-right: 1px solid lightgray;
+    padding-right: 20px;
+}
+
+.profile-card .profile-content .location-email .le {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+}
+
+/* Social Media Links */
+.profile-card .profile-content .social-links {
+    background-color: grey;
+    border-radius: 0 0 20px 20px;
+    height: fit-content;
+    padding: 10px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-card .profile-content .social-links a {
+    color: black;
+}
+
+.profile-card .profile-content .social-links a:hover {
+    color: wheat;
+}
+
+/* Media Queries */
+@media (min-width: 541px) and (max-width: 768px) {
+    .profile-card {
+        width: 60%;
+    }
+}
+
+@media (max-width: 540px) {
+    .profile-card {
+        width: 80%;
+    }
+}
